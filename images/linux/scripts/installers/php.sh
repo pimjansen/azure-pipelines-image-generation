@@ -244,6 +244,9 @@ php composer-setup.php
 sudo mv composer.phar /usr/bin/composer
 php -r "unlink('composer-setup.php');"
 
+# Composer parallel download
+composer global require hirak/prestissimo
+
 # Install phpunit (for PHP)
 wget -q -O phpunit https://phar.phpunit.de/phpunit-7.phar
 chmod +x phpunit
